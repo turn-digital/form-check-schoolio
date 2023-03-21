@@ -33,7 +33,6 @@ function App() {
           path="/Contact"
           element={
             <>
-              <Header />
               <Contact />
             </>
           }
