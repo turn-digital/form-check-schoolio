@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a3e6d766.css",
-    "main.js": "/static/js/main.b91d9f9e.js",
+    "main.js": "/static/js/main.b3128abf.js",
     "static/js/787.57d4b1be.chunk.js": "/static/js/787.57d4b1be.chunk.js",
     "static/media/makslasskola.ventspils.lv-ln.jpg": "/static/media/makslasskola.ventspils.lv-ln.beb4ad0d633f973b161a.jpg",
     "static/media/SourceSansPro-Regular.woff": "/static/media/SourceSansPro-Regular.cab17d24b28e61f2e56d.woff",
@@ -11,11 +11,11 @@
     "index.html": "/index.html",
     "static/media/icon-chevron-right.svg": "/static/media/icon-chevron-right.bd51f68c14ea3f48974d.svg",
     "main.a3e6d766.css.map": "/static/css/main.a3e6d766.css.map",
-    "main.b91d9f9e.js.map": "/static/js/main.b91d9f9e.js.map",
+    "main.b3128abf.js.map": "/static/js/main.b3128abf.js.map",
     "787.57d4b1be.chunk.js.map": "/static/js/787.57d4b1be.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3e6d766.css",
-    "static/js/main.b91d9f9e.js"
+    "static/js/main.b3128abf.js"
   ]
 }
