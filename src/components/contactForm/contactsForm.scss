@@ -12,7 +12,7 @@
     }
 
     &__button {
-        display: block;
+        display: inline-block;
         margin-top: 30px;
         padding: 8px 14px;
         background-color: $color-tertiary;
@@ -23,6 +23,13 @@
         line-height: 24px;
         border-radius: 8px;
         cursor: pointer;
+
+        &--arrow {
+            &::after {
+                content: url("../../assets/images/svg/arrow-right--white.svg");
+                margin-left: 14px;
+            }
+        }
     }
 
     &__text {
@@ -87,7 +94,7 @@
         width: 100%;
         min-height: 60px;
         padding-left: 30px;
-        background: url("../../assets/images/svg/icon-chevron-right.svg") no-repeat scroll 9px 20px;
+        background: url("../../assets/images/svg/icon-mail.svg") no-repeat scroll 14px 24px;
         border-radius: 3px;
         border: 1px solid $color-border-stone;
     }

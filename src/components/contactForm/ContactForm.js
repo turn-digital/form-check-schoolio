@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { sendContactForm } from "../../services/index";
+import Logo from "../../assets/images/schoolio-logo.png"
 
 const isBrowser = window !== undefined;
 
@@ -31,7 +32,7 @@ const ContactForm = () => {
       <section className="contacts-form__block">
         <h1 className="contacts-form__head">Vai šī ir mūsu skolas jaunā mājas lapa?</h1>
         <p className="contacts-form__text">Tā var kļūt trīs dienu laikā par 50/Eur mēnesī bez izstrādes izmaksām. Katra skola ir pelnījusi tīmekļvietni, ar kuru var lepoties! </p>
-        <button className="contacts-form__button" aria-label="Ko tālāk?" href="#form">Ko tālāk?</button>
+        <a className="contacts-form__button contacts-form__button--arrow" aria-label="Ko tālāk?" href="#form">Ko tālāk?</a>
       </section>
       <section className="contacts-form__block">
         <ul>
@@ -76,22 +77,22 @@ const ContactForm = () => {
         <div className="contacts-form__box">
           <h2 className="contacts-form__title">Ko darīt tālāk?</h2>
           <p className="contacts-form__text">Sūti informātikas skolotājam vai atbildīgajam par mājaslapu, jo tava mājaslapa var izskatīties šādi!</p>
-          <button className="contacts-form__button" aria-label="Dalīties" href="#form">Dalīties</button>
+          <a className="contacts-form__button" aria-label="Dalīties" href="#form">Dalīties</a>
           <p className="contacts-form__text contacts-form__text--margin">Ievadi savu e-pasta adresi un mēs ar tevi sazināsiemies tuvāko dienu laikā</p>
         </div>
-        <div id="form">
+        <div>
          {message && (
            <div>
            {message}
            <span className="contacts-form__close" onClick={() => setMessage("")}>&times;</span>
          </div>
          )}
-          <form ref={formRef} onSubmit={submitContact} className="contacts-form__form">
+          <form id="form" ref={formRef} onSubmit={submitContact} className="contacts-form__form">
             <label for="email" className="contacts-form__text">E-pasts</label>
             <input id="email" required type={"email"} className="contacts-form__input"/>
-            <button className="contacts-form__button" aria-label="submit" type="submit">Send</button>
+            <a className="contacts-form__button" aria-label="submit" type="submit">Pieteikties</a>
           </form>
-          <img className="contacts-form__img" src="../../assets/images/makslasskola.ventspils.lv-ln.jpg" aria-label="schoolio logo"/>
+          <img className="contacts-form__img" src={Logo} alt="schoolio logo" />
         </div>
     </section>
     </main>
