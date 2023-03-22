@@ -1,6 +1,8 @@
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import Hero from "./components/hero/Hero";
+import HeroRectangle from "./components/heroRectangle/HeroRectangle";
+import HeroSquare from "./components/heroSquare/HeroSquare"
+import HeroCircle from "./components/heroCircle/HeroCircle"
 import News from "./components/news/News";
 import Contact from "./Contact";
 import "./index.scss";
@@ -15,8 +17,10 @@ function App() {
         element={
           <div className="home page__flexblock">
             <Header />
-            <section className="home__section home__section--hero">
-              <Hero />
+            <section className="home__section home__section--hero"> 
+              <HeroRectangle />
+              {/* <HeroSquare /> */}
+              {/* <HeroCircle /> */}
             </section>
             <News />
             <Footer />
