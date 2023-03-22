@@ -1,7 +1,7 @@
 import React from "react";
-import ContactForm from "./components/contactForm/ContactForm";
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
+import ContactForm from "../components/contactForm/ContactForm";
+import Footer from "../components/footer/Footer";
+import Header from "../components/header/Header";
 
 const Contact = () => {
   return (

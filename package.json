@@ -1,6 +1,5 @@
 {
   "name": "schoolio-react",
-  "homepage": "https://schoolio-form-check.skl.lv/#",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
